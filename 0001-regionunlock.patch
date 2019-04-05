@@ -258,6 +258,21 @@ index 186c70dc..28fe7ad2 100644
  
  							if (fail_ext_user_auth == false)
  							{
+@@ -1825,10 +1825,10 @@ bool ServerAccept(CONNECTION *c)
+ 							bool b = false;
+ 							bool fail_ext_user_auth = false;
+ 
+-							if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
+-							{
+-								fail_ext_user_auth = true;
+-							}
++//							if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
++//							{
++//								fail_ext_user_auth = true;
++//							}
+ 
+ 							if (fail_ext_user_auth == false)
+ 							{
 @@ -1866,8 +1866,8 @@ bool ServerAccept(CONNECTION *c)
  					break;
  
