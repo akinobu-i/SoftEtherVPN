@@ -1825,10 +1825,10 @@ bool ServerAccept(CONNECTION *c)
 							bool b = false;
 							bool fail_ext_user_auth = false;
 
-							if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
-							{
-								fail_ext_user_auth = true;
-							}
+//							if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
+//							{
+//								fail_ext_user_auth = true;
+//							}
 
 							if (fail_ext_user_auth == false)
 							{
