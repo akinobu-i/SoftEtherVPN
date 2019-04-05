@@ -5032,13 +5032,13 @@ UINT StCreateUser(ADMIN *a, RPC_SET_USER *t)
 
 	CHECK_RIGHT;
 
-	if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
-	{
-		if (t->AuthType == AUTHTYPE_USERCERT || t->AuthType == AUTHTYPE_RADIUS || t->AuthType == AUTHTYPE_ROOTCERT || t->AuthType == AUTHTYPE_NT)
-		{
-			return ERR_NOT_SUPPORTED_AUTH_ON_OPENSOURCE;
-		}
-	}
+//	if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
+//	{
+//		if (t->AuthType == AUTHTYPE_USERCERT || t->AuthType == AUTHTYPE_RADIUS || t->AuthType == AUTHTYPE_ROOTCERT || t->AuthType == AUTHTYPE_NT)
+//		{
+//			return ERR_NOT_SUPPORTED_AUTH_ON_OPENSOURCE;
+//		}
+//	}
 
 	if (t->AuthType == AUTHTYPE_USERCERT)
 	{
