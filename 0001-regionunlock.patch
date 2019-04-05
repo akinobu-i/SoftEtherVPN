@@ -317,6 +317,21 @@ diff --git src/Cedar/Sam.c src/Cedar/Sam.c
 index b863f245..b2158b66 100644
 --- src/Cedar/Sam.c
 +++ src/Cedar/Sam.c
+@@ -424,10 +424,10 @@ bool SamAuthUserByPlainPassword(CONNECTION *c, HUB *hub, char *username, char *p
+ 		return false;
+ 	}
+ 
+-	if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
+-	{
+-		return false;
+-	}
++//	if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
++//	{
++//		return false;
++//	}
+ 
+ 	h = hub;
+ 
 @@ -654,10 +654,10 @@ bool SamAuthUserByCert(HUB *h, char *username, X *x)
  		return false;
  	}
