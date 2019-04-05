@@ -424,10 +424,10 @@ bool SamAuthUserByPlainPassword(CONNECTION *c, HUB *hub, char *username, char *p
 		return false;
 	}
 
-	if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
-	{
-		return false;
-	}
+//	if (GetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH) != 0)
+//	{
+//		return false;
+//	}
 
 	h = hub;
 
